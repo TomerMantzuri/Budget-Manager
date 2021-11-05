@@ -1,12 +1,12 @@
 # Budget-Manager
 
-A Python desktop application using PyQt5 and designing the UI with QT Designer.
+A Python desktop application using PyQt5, the application UI designed by QT Designer.
 
-The application can support many users, for each user the app create his own database for income/outcome.
+This application can support many users, for each user the app create his own database for income/outcome.
 
-Each user have to sign up first, once the user insert data as outcome or income, the app will display the data summary on diffrent charts, calender , progress indicator and more.
+Each user have to sign up first, once the user insert data as outcome or income, the app will display the data summary on different charts, calender, progress indicator and more.
 
-The aviliable dates on the app are from 1/1/2020 until 31/12/2029.
+The available dates on the app are from 1/1/2020 until 31/12/2029.
 
 A few screenshots from the application :
 
@@ -32,5 +32,6 @@ over view page of a diffrent month while mouse hoovering the pie chart:
 ![](screenshots/Explode%20Slice.jpg)
 
 
-** The category list on the button right is running on a diffrent thread sliding the categories with thier total spending for the selected month,
+* The category list on the button right is running on a diffrent thread sliding the categories with thier total spending for the selected month,
 so as the pie chart which is spinning unless the mouse hoovers a slice.
+* According to the monthly balance and the user monthly saving goal, the application display a motivation sentences.
