@@ -1,0 +1,36 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>Icons/Petalart-Free-Shopping-Money-wallet.ico</file>
+    <file>Icons/Miniartx-Drinks-Cocktail-Tequila-Sunrise.ico</file>
+    <file>Icons/Dapino-Beach-Sun.ico</file>
+    <file>Icons/Zairaam-Bumpy-Planets-05-moon.ico</file>
+    <file>Icons/Oxygen-Icons.org-Oxygen-Places-user-identity.ico</file>
+    <file>Icons/Oxygen-Icons.org-Oxygen-Actions-edit-delete.ico</file>
+    <file>Icons/Aha-Soft-Business-Toolbar-Payment.ico</file>
+    <file>Icons/Paomedia-Small-N-Flat-Lightning.ico</file>
+    <file>Icons/Nendomatt-Apple-Louvre-Apple-Store-Tshirt.ico</file>
+    <file>Icons/Pixelkit-Tasty-Bites-Hamburger.ico</file>
+    <file>Icons/Miniartx-Gifts-2-Gift-box.ico</file>
+    <file>Icons/Ahmadhania-Spherical-Minimize.ico</file>
+    <file>Icons/Designcontest-Ecommerce-Business-Money.ico</file>
+    <file>Icons/Artdesigner-Urban-Stories-House.ico</file>
+    <file>Icons/Cemagraphics-Classic-Cars-Bmw-mini.ico</file>
+    <file>Icons/Aha-Soft-3d-Social-Plus.ico</file>
+    <file>Icons/money_pig.ico</file>
+    <file>Icons/updates-16.ico</file>
+    <file>Icons/emoticon-64.ico</file>
+    <file>Icons/arrow-282-32.ico</file>
+    <file>Icons/available-updates-16.ico</file>
+    <file>Icons/minus-16.ico</file>
+    <file>Icons/plus-16.ico</file>
+    <file>Icons/question-mark-64.ico</file>
+    <file>Icons/available-updates-16.ico</file>
+    <file>Icons/arrow-282-32.ico</file>
+    <file>Icons/minus-16.ico</file>
+    <file>Icons/plus-16.ico</file>
+  </qresource>
+  <qresource prefix="img">
+    <file>img/Monefy-Budget-Manager-and-Expense-Tracker-app.jpg</file>
+    <file>img/—Pngtree—dark black with shiny gold_1173832.png</file>
+  </qresource>
+</RCC>

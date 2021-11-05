@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTip">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/newPrefix/ThemePic.jfif&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">@font-face{
+font-family : NovaFlat;
+}
+*{
+color: #fff;
+font-family: NovaFlat;
+font-size:12 px;
+border: nine;
+}
+
+#centralwidget{
+border-image: url(:/img/img/—Pngtree—dark black with shiny gold_1173832.png);
+}
+
+#frame_4 QPushButton{
+padding: 10px;
+border-radius: 5px;
+}
+
+</string>
+   </property>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>751</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>731</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;</string>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="overviewpage">
+      <widget class="QFrame" name="frame">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>731</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>0</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 24pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string>overview</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>200</y>
+          <width>461</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="PieFrame">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>721</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="BarFrame"/>
+       </widget>
+       <widget class="QLabel" name="PieTitle">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>240</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: italic 16pt &quot;Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Outcome by categories</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Year">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>25</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255,255, 255);
+background-color: rgb(10, 10, 10);
+font: 14pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="ProgressIndicator">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>250</y>
+          <width>251</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="CircularFrame">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>200</width>
+           <height>200</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+border-radius:100px;
+background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.749 rgba(255, 0, 127, 0), stop:0.750 rgba(85, 170, 255, 255));
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+        <widget class="QFrame" name="CircularBG">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>200</width>
+           <height>200</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+border-radius:100px;
+background-color: rgba(77, 77, 127, 100);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+        <widget class="QFrame" name="frame_4">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>40</y>
+           <width>180</width>
+           <height>180</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+border-radius:90px;
+background-color: rgb(77, 127, 127);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="ProgressTitle">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>35</y>
+            <width>161</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 13pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="DisplaySaving">
+          <property name="geometry">
+           <rect>
+            <x>29</x>
+            <y>120</y>
+            <width>121</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 24pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; vertical-align:super;&quot;&gt;0/&lt;/span&gt;&lt;span style=&quot; vertical-align:sub;&quot;&gt;6000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="toolButton">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>50</y>
+            <width>80</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">backgroud-color:transparent;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/Icons/Icons/money_pig.ico</normaloff>:/Icons/Icons/money_pig.ico</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QSpinBox" name="Goal">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>240</y>
+           <width>71</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;
+</string>
+         </property>
+         <property name="wrapping">
+          <bool>false</bool>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::PlusMinus</enum>
+         </property>
+         <property name="minimum">
+          <number>1000</number>
+         </property>
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+         <property name="singleStep">
+          <number>1000</number>
+         </property>
+         <property name="stepType">
+          <enum>QAbstractSpinBox::DefaultStepType</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="updateGoal">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>235</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:15px;
+background-color: rgb(61, 61, 61);
+font: italic 16pt &quot;Monotype Corsiva&quot;;
+color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="text">
+          <string>Update</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/Icons/Icons/updates-16.ico</normaloff>:/Icons/Icons/updates-16.ico</iconset>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Title">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>-1</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <zorder>CircularBG</zorder>
+        <zorder>CircularFrame</zorder>
+        <zorder>frame_4</zorder>
+        <zorder>Goal</zorder>
+        <zorder>updateGoal</zorder>
+        <zorder>Title</zorder>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="incomeoutcomepage">
+      <widget class="QFrame" name="frame_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>731</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="headTitle">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>0</y>
+          <width>105</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 24pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Outcome</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="Table">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>70</y>
+          <width>500</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">gridline-color: rgb(255, 255, 255);
+font: 13pt &quot; Monotype Corsiva&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="columnCount">
+         <number>0</number>
+        </property>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>120</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+       <widget class="QPushButton" name="AddOutcome">
+        <property name="geometry">
+         <rect>
+          <x>555</x>
+          <y>100</y>
+          <width>135</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string> Add new outcome</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/Icons/Icons/plus-16.ico</normaloff>:/Icons/Icons/plus-16.ico</iconset>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RemoveOutcome">
+        <property name="geometry">
+         <rect>
+          <x>555</x>
+          <y>240</y>
+          <width>130</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string>  Remove outcome</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/Icons/Icons/minus-16.ico</normaloff>:/Icons/Icons/minus-16.ico</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="UpdateOutcome">
+        <property name="geometry">
+         <rect>
+          <x>555</x>
+          <y>170</y>
+          <width>130</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family> Monotype Corsiva</family>
+          <pointsize>13</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string> update outcome</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/Icons/Icons/available-updates-16.ico</normaloff>:/Icons/Icons/available-updates-16.ico</iconset>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ErrorMessage">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>350</y>
+          <width>251</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AddIncome">
+        <property name="geometry">
+         <rect>
+          <x>555</x>
+          <y>100</y>
+          <width>135</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string> Add new income</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/Icons/Icons/plus-16.ico</normaloff>:/Icons/Icons/plus-16.ico</iconset>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="UpdateIncome">
+        <property name="geometry">
+         <rect>
+          <x>555</x>
+          <y>170</y>
+          <width>130</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family> Monotype Corsiva</family>
+          <pointsize>13</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string> update income</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/Icons/Icons/available-updates-16.ico</normaloff>:/Icons/Icons/available-updates-16.ico</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RemoveIncome">
+        <property name="geometry">
+         <rect>
+          <x>555</x>
+          <y>240</y>
+          <width>130</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string>  Remove income</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/Icons/Icons/minus-16.ico</normaloff>:/Icons/Icons/minus-16.ico</iconset>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="OutcomeMonths">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>30</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255,255, 255);
+background-color: rgb(10, 10, 10);
+font: 14pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="maxVisibleItems">
+         <number>13</number>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="IncomeMonths">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>30</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255,255, 255);
+background-color: rgb(10, 10, 10);
+font: 14pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="maxVisibleItems">
+         <number>13</number>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="Balance">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>470</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="total">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>470</y>
+          <width>241</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 32pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Total</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="IncomeYear">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>35</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255,255, 255);
+background-color: rgb(10, 10, 10);
+font: 14pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="OutcomeYear">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>35</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255,255, 255);
+background-color: rgb(10, 10, 10);
+font: 14pt &quot; Monotype Corsiva&quot;;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="categoriespage">
+      <widget class="QFrame" name="categories_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>721</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QStackedWidget" name="stackedCategory">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>-1</y>
+          <width>721</width>
+          <height>551</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="CategoriesPage">
+         <widget class="QFrame" name="frame_9">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>10</y>
+            <width>731</width>
+            <height>561</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="categories_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>721</width>
+             <height>481</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_21">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>0</y>
+              <width>221</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 24pt &quot; Monotype Corsiva&quot;;
+
+color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>Outcome categories</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_22">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>309</y>
+              <width>211</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 24pt &quot; Monotype Corsiva&quot;;
+
+color: rgb(0,255, 0);</string>
+            </property>
+            <property name="text">
+             <string>Income categories</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Housing">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>60</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Artdesigner-Urban-Stories-House.ico</normaloff>:/Icons/Icons/Artdesigner-Urban-Stories-House.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Transportation">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>60</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Cemagraphics-Classic-Cars-Bmw-mini.ico</normaloff>:/Icons/Icons/Cemagraphics-Classic-Cars-Bmw-mini.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Food">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>60</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Pixelkit-Tasty-Bites-Hamburger.ico</normaloff>:/Icons/Icons/Pixelkit-Tasty-Bites-Hamburger.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Clothes">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>60</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Nendomatt-Apple-Louvre-Apple-Store-Tshirt.ico</normaloff>:/Icons/Icons/Nendomatt-Apple-Louvre-Apple-Store-Tshirt.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Bills">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>160</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Paomedia-Small-N-Flat-Lightning.ico</normaloff>:/Icons/Icons/Paomedia-Small-N-Flat-Lightning.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Health">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>160</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Aha-Soft-3d-Social-Plus.ico</normaloff>:/Icons/Icons/Aha-Soft-3d-Social-Plus.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="OutcomeOther">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>160</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/question-mark-64.ico</normaloff>:/Icons/Icons/question-mark-64.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Entertainment">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>160</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Miniartx-Drinks-Cocktail-Tequila-Sunrise.ico</normaloff>:/Icons/Icons/Miniartx-Drinks-Cocktail-Tequila-Sunrise.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Salary">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>370</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Aha-Soft-Business-Toolbar-Payment.ico</normaloff>:/Icons/Icons/Aha-Soft-Business-Toolbar-Payment.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Gift">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>370</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Miniartx-Gifts-2-Gift-box.ico</normaloff>:/Icons/Icons/Miniartx-Gifts-2-Gift-box.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="TaxRepay">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>370</y>
+              <width>70</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/Designcontest-Ecommerce-Business-Money.ico</normaloff>:/Icons/Icons/Designcontest-Ecommerce-Business-Money.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="IncomeOther">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>370</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Resources.qrc">
+              <normaloff>:/Icons/Icons/question-mark-64.ico</normaloff>:/Icons/Icons/question-mark-64.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>64</width>
+              <height>64</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_23">
+            <property name="geometry">
+             <rect>
+              <x>560</x>
+              <y>435</y>
+              <width>51</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_24">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>125</y>
+              <width>81</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Housing</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_25">
+            <property name="geometry">
+             <rect>
+              <x>105</x>
+              <y>430</y>
+              <width>51</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Salary</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_26">
+            <property name="geometry">
+             <rect>
+              <x>267</x>
+              <y>435</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Gift</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_27">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>430</y>
+              <width>81</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Tax repay</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_28">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>125</y>
+              <width>111</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Transportation</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_29">
+            <property name="geometry">
+             <rect>
+              <x>410</x>
+              <y>125</y>
+              <width>51</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Food</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_30">
+            <property name="geometry">
+             <rect>
+              <x>560</x>
+              <y>125</y>
+              <width>51</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Clothes</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_31">
+            <property name="geometry">
+             <rect>
+              <x>260</x>
+              <y>230</y>
+              <width>51</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Bills</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_32">
+            <property name="geometry">
+             <rect>
+              <x>560</x>
+              <y>230</y>
+              <width>51</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_33">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>230</y>
+              <width>111</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Entertainment</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_34">
+            <property name="geometry">
+             <rect>
+              <x>405</x>
+              <y>230</y>
+              <width>51</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot; Monotype Corsiva&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Health</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="CategoryData">
+         <widget class="QWidget" name="verticalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>230</y>
+            <width>411</width>
+            <height>301</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="CategoryPieFrame"/>
+         </widget>
+         <widget class="QPushButton" name="GoBack">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>490</y>
+            <width>111</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: italic 14pt &quot;Monotype Corsiva&quot;;
+color:#fff;
+border:nine;</string>
+          </property>
+          <property name="text">
+           <string>   Go Back</string>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/Icons/Icons/arrow-282-32.ico</normaloff>:/Icons/Icons/arrow-282-32.ico</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>48</width>
+            <height>48</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="CategoryTable">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>60</y>
+            <width>500</width>
+            <height>200</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">gridline-color: rgb(255, 255, 255);
+font: 13pt &quot; Monotype Corsiva&quot;;
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="columnCount">
+           <number>0</number>
+          </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>120</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+         <widget class="QLabel" name="Name">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>0</y>
+            <width>171</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 32pt &quot; Monotype Corsiva&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Category</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="TotalSpent">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>320</y>
+            <width>281</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:15pt &quot; Monotype Corsiva&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Total </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>230</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:15pt &quot; Monotype Corsiva&quot;;</string>
+          </property>
+          <property name="text">
+           <string>summery:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="TotalCate">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>270</y>
+            <width>371</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:15pt &quot; Monotype Corsiva&quot;;</string>
+          </property>
+          <property name="text">
+           <string>total category</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="MonthLabel">
+          <property name="geometry">
+           <rect>
+            <x>480</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot; Monotype Corsiva&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Month</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>201</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Greeting">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 21pt &quot; Monotype Corsiva&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Hello</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="User_Name">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 21pt &quot; Monotype Corsiva&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Sun">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>50</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 21pt &quot; Monotype Corsiva&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Dapino-Beach-Sun.ico</normaloff>:/Icons/Icons/Dapino-Beach-Sun.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Moon">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>50</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 21pt &quot; Monotype Corsiva&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Zairaam-Bumpy-Planets-05-moon.ico</normaloff>:/Icons/Icons/Zairaam-Bumpy-Planets-05-moon.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="CopyRight">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>590</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>© Tomer Mantzuri</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="HeaderFrame">
+    <property name="geometry">
+     <rect>
+      <x>199</x>
+      <y>30</y>
+      <width>901</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="Overview">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Lucida Calligraphy&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Overview</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Income">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Lucida Calligraphy&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Income</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Outcome">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Lucida Calligraphy&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Outcome</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="categories">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>0</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Lucida Calligraphy&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Categories</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 18pt &quot;Myanmar Text&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources.qrc">
+      <normaloff>:/img/img/Monefy-Budget-Manager-and-Expense-Tracker-app.jpg</normaloff>:/img/img/Monefy-Budget-Manager-and-Expense-Tracker-app.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_7">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>50</y>
+      <width>351</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QListWidget" name="OutcomeList">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>250</y>
+       <width>175</width>
+       <height>145</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;
+font: 10pt &quot;Lucida Calligraphy&quot;;
+color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::NoSelection</enum>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="IncomeList">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>250</y>
+       <width>175</width>
+       <height>145</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;
+font: 10pt &quot;Lucida Calligraphy&quot;;
+color:rgb(0, 170, 0);</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::NoSelection</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="SlidingFrame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>395</y>
+       <width>351</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="HousingSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Housing</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Artdesigner-Urban-Stories-House.ico</normaloff>:/Icons/Icons/Artdesigner-Urban-Stories-House.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="TransportationSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Transportation</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Cemagraphics-Classic-Cars-Bmw-mini.ico</normaloff>:/Icons/Icons/Cemagraphics-Classic-Cars-Bmw-mini.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="FoodSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Food</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Pixelkit-Tasty-Bites-Hamburger.ico</normaloff>:/Icons/Icons/Pixelkit-Tasty-Bites-Hamburger.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ClothesSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>210</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Clothes</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Nendomatt-Apple-Louvre-Apple-Store-Tshirt.ico</normaloff>:/Icons/Icons/Nendomatt-Apple-Louvre-Apple-Store-Tshirt.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BillsSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Bills</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Paomedia-Small-N-Flat-Lightning.ico</normaloff>:/Icons/Icons/Paomedia-Small-N-Flat-Lightning.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OtherSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>450</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Other</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/question-mark-64.ico</normaloff>:/Icons/Icons/question-mark-64.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="HealthSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>390</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Health</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Aha-Soft-3d-Social-Plus.ico</normaloff>:/Icons/Icons/Aha-Soft-3d-Social-Plus.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EntertainmentSlider">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>270</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot; Monotype Corsiva&quot;;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Entertainment</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/Icons/Icons/Miniartx-Drinks-Cocktail-Tequila-Sunrise.ico</normaloff>:/Icons/Icons/Miniartx-Drinks-Cocktail-Tequila-Sunrise.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot; Monotype Corsiva&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Budget</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot; Monotype Corsiva&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Manager</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="TopFrame">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>921</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="logoutbutton">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>0</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Resources.qrc">
+       <normaloff>:/Icons/Icons/Oxygen-Icons.org-Oxygen-Places-user-identity.ico</normaloff>:/Icons/Icons/Oxygen-Icons.org-Oxygen-Places-user-identity.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Minimize">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>0</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Resources.qrc">
+       <normaloff>:/Icons/Icons/Ahmadhania-Spherical-Minimize.ico</normaloff>:/Icons/Icons/Ahmadhania-Spherical-Minimize.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="closebutton">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>0</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Resources.qrc">
+       <normaloff>:/Icons/Icons/Oxygen-Icons.org-Oxygen-Actions-edit-delete.ico</normaloff>:/Icons/Icons/Oxygen-Icons.org-Oxygen-Actions-edit-delete.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
