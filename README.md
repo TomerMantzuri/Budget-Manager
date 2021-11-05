@@ -25,7 +25,7 @@ outcome page:
 
 categories page:  
 
-![](screenshots/categories.jpg)
+![](screenshots/categories%20page.jpg)
 
 over view page of a diffrent month while mouse hoovering the pie chart:  
 
